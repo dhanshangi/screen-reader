@@ -1,0 +1,1877 @@
+/** Hash Configs **/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+:root {
+
+  /** Font **/
+  --font1: Fredoka;
+
+  --fontSize1: 5rem;
+  --fontSize2: 2rem;
+
+  --xs: 1%;
+  --sm: 2.5%;
+  --md: 5%;
+  --lg: 7.5%;
+  --xl: 10%;
+
+  --px-xs: 1%;
+  --px-sm: 2.5%;
+  --px-md: 5%;
+  --px-lg: 7.5%;
+  --px-xl: 10%;
+
+
+}
+
+/** Hash Configs Ends **/
+
+/*** 
+====================================================================
+	Text - START
+====================================================================
+***/
+
+body {
+  font-family: var(--font1);
+  margin: auto;
+}
+
+
+
+/* lg screen*/
+@media (max-width: 1012px) {}
+
+/* md screen*/
+@media (max-width: 768px) {
+
+  h1,
+  .h1 {
+    font-size: 6.4rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 3.4rem;
+  }
+}
+
+/* sm screen*/
+@media (max-width: 577px) {
+
+  /** DESIGN **/
+  h1,
+  .h1 {
+    font-size: 4.7rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2.9rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.8rem;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.6rem;
+  }
+
+  h5,
+  .h5 {
+    font-size: 1.6rem;
+  }
+}
+
+/*** 
+====================================================================
+	Text - Ends
+====================================================================
+***/
+
+
+
+/*** 
+====================================================================
+    Common Styling - Start
+====================================================================
+***/
+
+/* validation styling start */
+
+.ans-tiles.correct { background-color: lightgreen; }
+.ans-tiles.incorrect { background-color: lightcoral; }
+.reference {cursor: url(../img/green-cursor.cur),auto;}
+.reference .selected {
+ cursor:  url(../img/green-cursor.cur),auto;
+ background-color: #c8d6e5;
+ padding: 5px;
+ width: fit-content;
+ height: fit-content;
+}
+
+/* validation styling End */
+
+/*** 
+====================================================================
+    Page Styling - Start
+====================================================================
+***/
+body {
+  background-color: #EAFFEA;
+  padding: 20px;
+  cursor: url(../img/green-cursor.cur),auto;
+  font-family: var(--font1);
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+.pageGrid {
+  border: 5px dashed #62F163;
+  width: 100%;
+  border-radius: 50px;
+  height: auto;
+}
+#h1 .boxborder{
+  border: 4px dashed #62F163;
+  padding: 10px 12px;
+  border-radius: 15px;
+}
+#h1 .boxborder img {
+  width: 100%;
+}
+#h1 p {
+  color: #62F163;
+  font-weight: 800;
+  border: 4px dashed #62F163;
+  border-radius: 15px;
+  padding: 4px 15px;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+#h1 button {
+  background-color: #62F163;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 1px solid #62F163;
+  padding: 4px 15px;
+  border-radius: 10px;
+  cursor: url(../img/green-cursor.cur),auto;
+  font-family: var(--font1);
+}
+#h1 .n0-i2 .n1-i2 {
+  border: 4px dashed #62F163;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 17px;
+}
+
+#m1 .n0-i2 {
+  border-top: 6px dashed #62F163;
+  height: 200px;
+}
+#m1 .n0-i2 img {
+  width: 100%;
+}
+svg {
+  max-width: 100%;
+}
+#m1 .n0-i2 .n1-i1 {
+  width: 120px;
+}
+
+#m1 .n0-i2 .n1-i2 {
+  width: 120px;
+}
+
+#m1 .n0-i2 .n1-i3 {
+  width: 120px;
+}
+
+#m1 .n0-i2 .n1-i4 {
+  width: 120px;
+}
+
+#m1 .n0-i2 .n1-i5 {
+  width: 120px;
+}
+
+#m1 .n0-i2 .n1-i6 {
+  width: 120px;
+}
+
+#m1 .n0-i2 .n1-i7 {
+  width: 120px;
+}
+.q1 .answer .tileColor-red #red path {
+  fill: #e94e43;
+}
+.q1 .answer .tileColor-red #yellow path {
+  fill: #e94e43;
+}
+.q1 .answer .tileColor-red #blue path {
+  fill: #e94e43;
+}
+.q1 .answer .tileColor-red #green path {
+  fill: #e94e43;
+}
+.q1 .answer .tileColor-yellow #red path {
+  fill: #ded15b;
+}
+.q1 .answer .tileColor-yellow #yellow path {
+  fill: #ded15b;
+}
+.q1 .answer .tileColor-yellow #blue path {
+  fill: #ded15b;
+}
+.q1 .answer .tileColor-yellow #green path {
+  fill: #ded15b;
+}
+.q1 .answer .tileColor-blue #red path {
+  fill: #55bad8;
+}
+.q1 .answer .tileColor-blue #yellow path {
+  fill: #55bad8;
+}
+.q1 .answer .tileColor-blue #blue path {
+  fill: #55bad8;
+}
+.q1 .answer .tileColor-blue #green path {
+  fill: #55bad8;
+}
+.q1 .answer .tileColor-green #red path {
+  fill: #47b04a;
+}
+.q1 .answer .tileColor-green #yellow path {
+  fill: #47b04a;
+}
+.q1 .answer .tileColor-green #blue path {
+  fill: #47b04a;
+}
+.q1 .answer .tileColor-green #green path {
+  fill: #47b04a;
+}
+
+
+.q2 .answer .tileColor-yellow #red path {
+  fill: #F85A4E;
+}
+.q2 .answer .tileColor-red #red path {
+  fill: #F85A4E;
+}
+.q2 .answer .tileColor-red #yellow path {
+  fill: #F85A4E;
+}
+
+.q2 .answer .tileColor-red #blue path {
+  fill: #F85A4E;
+}
+
+.q2 .answer .tileColor-red #green path {
+  fill: #F85A4E;
+}
+
+.q2 .answer .tileColor-yellow #red path {
+  fill: #F0E25E;
+}
+
+.q2 .answer .tileColor-yellow #yellow path {
+  fill: #F0E25E;
+}
+
+.q2 .answer .tileColor-yellow #blue path {
+  fill: #F0E25E;
+}
+
+.q2 .answer .tileColor-yellow #green path {
+  fill: #F0E25E;
+}
+
+.q2 .answer .tileColor-blue #red path {
+  fill: #5B8EF0;
+}
+
+.q2 .answer .tileColor-blue #yellow path {
+  fill: #5B8EF0;
+}
+
+.q2 .answer .tileColor-blue #blue path {
+  fill: #5B8EF0;
+}
+
+.q2 .answer .tileColor-blue #green path {
+  fill: #5B8EF0;
+}
+
+.q2 .answer .tileColor-green #red path {
+  fill: #59C55E;
+}
+
+.q2 .answer .tileColor-green #yellow path {
+  fill: #59C55E;
+}
+
+.q2 .answer .tileColor-green #blue path {
+  fill: #59C55E;
+}
+
+.q2 .answer .tileColor-green #green path {
+  fill: #59C55E;
+}
+
+
+.q3 .answer .tileColor-red #red path {
+  fill: #F85A4E;
+}
+
+.q3 .answer .tileColor-red #darkred path {
+  fill: #EB4444;
+}
+
+.q3 .answer .tileColor-red #yellow path {
+  fill: #F85A4E;
+}
+
+.q3 .answer .tileColor-red #darkyellow path {
+  fill: #EB4444;
+}
+
+.q3 .answer .tileColor-red #blue path {
+  fill: #F85A4E;
+}
+
+.q3 .answer .tileColor-red #darkblue path {
+  fill: #EB4444;
+}
+
+.q3 .answer .tileColor-red #green path {
+  fill: #F85A4E;
+}
+
+.q3 .answer .tileColor-red #darkgreen path {
+  fill: #EB4444;
+}
+
+.q3 .answer .tileColor-yellow #red path {
+  fill: #FFEB3A;
+}
+
+.q3 .answer .tileColor-yellow #darkred path {
+  fill: #F9D82F;
+}
+
+.q3 .answer .tileColor-yellow #yellow path {
+  fill: #FFEB3A;
+}
+
+.q3 .answer .tileColor-yellow #darkyellow path {
+  fill: #F9D82F;
+}
+
+.q3 .answer .tileColor-yellow #blue path {
+  fill: #FFEB3A;
+}
+
+.q3 .answer .tileColor-yellow #darkblue path {
+  fill: #F9D82F;
+}
+
+.q3 .answer .tileColor-yellow #green path {
+  fill: #FFEB3A;
+}
+
+.q3 .answer .tileColor-yellow #darkgreen path {
+  fill: #F9D82F;
+}
+
+.q3 .answer .tileColor-blue #red path {
+  fill: #5BCCF0;
+}
+
+.q3 .answer .tileColor-blue #darkred path {
+  fill: #49BEE3;
+}
+
+.q3 .answer .tileColor-blue #yellow path {
+  fill: #5BCCF0;
+}
+
+.q3 .answer .tileColor-blue #darkyellow path {
+  fill: #49BEE3;
+}
+
+.q3 .answer .tileColor-blue #blue path {
+  fill: #5BCCF0;
+}
+
+.q3 .answer .tileColor-blue #darkblue path {
+  fill: #49BEE3;
+}
+
+.q3 .answer .tileColor-blue #green path {
+  fill: #5BCCF0;
+}
+
+.q3 .answer .tileColor-blue #darkgreen path {
+  fill: #49BEE3;
+}
+
+.q3 .answer .tileColor-green #red path {
+  fill: #8ADF56;
+}
+
+.q3 .answer .tileColor-green #darkred path {
+  fill: #78CE43;
+}
+
+.q3 .answer .tileColor-green #yellow path {
+  fill: #8ADF56;
+}
+
+.q3 .answer .tileColor-green #darkyellow path {
+  fill: #78CE43;
+}
+
+.q3 .answer .tileColor-green #blue path {
+  fill: #8ADF56;
+}
+
+.q3 .answer .tileColor-green #darkblue path {
+  fill: #78CE43;
+}
+
+.q3 .answer .tileColor-green #green path {
+  fill: #8ADF56;
+}
+
+.q3 .answer .tileColor-green #darkgreen path {
+  fill: #78CE43;
+}
+
+.q4 .answer .tileColor-red #red path {
+  fill: #F85A4E;
+}
+
+.q4 .answer .tileColor-red #yellow path {
+  fill: #F85A4E;
+}
+
+.q4 .answer .tileColor-red #blue path {
+  fill: #F85A4E;
+}
+
+.q4 .answer .tileColor-red #green path {
+  fill: #F85A4E;
+}
+
+.q4 .answer .tileColor-red #orange path {
+  fill: #F85A4E;
+}
+
+.q4 .answer .tileColor-yellow #red path {
+  fill: #F0E25E;
+}
+
+.q4 .answer .tileColor-yellow #yellow path {
+  fill: #F0E25E;
+}
+
+.q4 .answer .tileColor-yellow #blue path {
+  fill: #F0E25E;
+}
+
+.q4 .answer .tileColor-yellow #green path {
+  fill: #F0E25E;
+}
+
+.q4 .answer .tileColor-yellow #orange path {
+  fill: #F0E25E;
+}
+
+.q4 .answer .tileColor-blue #red path {
+  fill: #5B8EF0;
+}
+
+.q4 .answer .tileColor-blue #yellow path {
+  fill: #5B8EF0;
+}
+
+.q4 .answer .tileColor-blue #blue path {
+  fill: #5B8EF0;
+}
+
+.q4 .answer .tileColor-blue #green path {
+  fill: #5B8EF0;
+}
+
+.q4 .answer .tileColor-blue #orange path {
+  fill: #5B8EF0;
+}
+
+.q4 .answer .tileColor-green #red path {
+  fill: #70D374;
+}
+
+.q4 .answer .tileColor-green #yellow path {
+  fill: #70D374;
+}
+
+.q4 .answer .tileColor-green #blue path {
+  fill: #70D374;
+}
+
+.q4 .answer .tileColor-green #green path {
+  fill: #70D374;
+}
+
+.q4 .answer .tileColor-green #orange path {
+  fill: #70D374;
+}
+
+.q4 .answer .tileColor-orange #red path {
+  fill: #F58839;
+}
+
+.q4 .answer .tileColor-orange #yellow path {
+  fill: #F58839;
+}
+
+.q4 .answer .tileColor-orange #blue path {
+  fill: #F58839;
+}
+
+.q4 .answer .tileColor-orange #green path {
+  fill: #F58839;
+}
+
+.q4 .answer .tileColor-orange #orange path {
+  fill: #F58839;
+}
+.q5 .answer .tileColor-red #red path {
+  fill: #F85A4E;
+}
+
+.q5 .answer .tileColor-red #yellow path {
+  fill: #F85A4E;
+}
+
+.q5 .answer .tileColor-red #blue path {
+  fill: #F85A4E;
+}
+
+.q5 .answer .tileColor-red #green path {
+  fill: #F85A4E;
+}
+
+.q5 .answer .tileColor-red #orange path {
+  fill: #F85A4E;
+}
+
+.q5 .answer .tileColor-red #darkred path {
+  fill: #D7362A;
+}
+
+.q5 .answer .tileColor-red #darkyellow path {
+  fill: #D7362A;
+}
+
+.q5 .answer .tileColor-red #darkblue path {
+  fill: #D7362A;
+}
+
+.q5 .answer .tileColor-red #darkgreen path {
+  fill: #D7362A;
+}
+
+.q5 .answer .tileColor-red #darkorange path {
+  fill: #F85A4E;
+}
+
+.q5 .answer .tileColor-yellow #red path {
+  fill: #F0E25E;
+}
+
+.q5 .answer .tileColor-yellow #yellow path {
+  fill: #F0E25E;
+}
+
+.q5 .answer .tileColor-yellow #blue path {
+  fill: #F0E25E;
+}
+
+.q5 .answer .tileColor-yellow #green path {
+  fill: #F0E25E;
+}
+
+.q5 .answer .tileColor-yellow #orange path {
+  fill: #F0E25E;
+}
+
+.q5 .answer .tileColor-yellow #darkred path {
+  fill: #ECCB1C;
+}
+
+.q5 .answer .tileColor-yellow #darkyellow path {
+  fill: #ECCB1C;
+}
+
+.q5 .answer .tileColor-yellow #darkblue path {
+  fill: #ECCB1C;
+}
+
+.q5 .answer .tileColor-yellow #darkgreen path {
+  fill: #ECCB1C;
+}
+
+.q5 .answer .tileColor-yellow #darkorange path {
+  fill: #ECCB1C;
+}
+
+.q5 .answer .tileColor-blue #red path {
+  fill: #5B8EF0;
+}
+
+.q5 .answer .tileColor-blue #yellow path {
+  fill: #5B8EF0;
+}
+
+.q5 .answer .tileColor-blue #blue path {
+  fill: #5B8EF0;
+}
+
+.q5 .answer .tileColor-blue #green path {
+  fill: #5B8EF0;
+}
+
+.q5 .answer .tileColor-blue #orange path {
+  fill: #5B8EF0;
+}
+
+.q5 .answer .tileColor-blue #darkred path {
+  fill: #306DE2;
+}
+
+.q5 .answer .tileColor-blue #darkyellow path {
+  fill: #306DE2;
+}
+
+.q5 .answer .tileColor-blue #darkblue path {
+  fill: #306DE2;
+}
+
+.q5 .answer .tileColor-blue #darkgreen path {
+  fill: #306DE2;
+}
+
+.q5 .answer .tileColor-blue #darkorange path {
+  fill: #306DE2;
+}
+
+.q5 .answer .tileColor-green #red path {
+  fill: #70D374;
+}
+
+.q5 .answer .tileColor-green #yellow path {
+  fill: #70D374;
+}
+
+.q5 .answer .tileColor-green #blue path {
+  fill: #70D374;
+}
+
+.q5 .answer .tileColor-green #green path {
+  fill: #70D374;
+}
+
+.q5 .answer .tileColor-green #orange path {
+  fill: #70D374;
+}
+
+.q5 .answer .tileColor-green #darkred path {
+  fill: #54A946;
+}
+
+.q5 .answer .tileColor-green #darkyellow path {
+  fill: #54A946;
+}
+
+.q5 .answer .tileColor-green #darkblue path {
+  fill: #54A946;
+}
+
+.q5 .answer .tileColor-green #darkgreen path {
+  fill: #54A946;
+}
+
+.q5 .answer .tileColor-green #darkorange path {
+  fill: #54A946;
+}
+
+.q5 .answer .tileColor-orange #red path {
+  fill: #F58839;
+}
+
+.q5 .answer .tileColor-orange #yellow path {
+  fill: #F58839;
+}
+
+.q5 .answer .tileColor-orange #blue path {
+  fill: #F58839;
+}
+
+.q5 .answer .tileColor-orange #green path {
+  fill: #F58839;
+}
+
+.q5 .answer .tileColor-orange #orange path {
+  fill: #F58839;
+}
+
+.q5 .answer .tileColor-orange #darkred path {
+  fill: #ED7016;
+}
+
+.q5 .answer .tileColor-orange #darkyellow path {
+  fill: #ED7016;
+}
+
+.q5 .answer .tileColor-orange #darkblue path {
+  fill: #ED7016;
+}
+
+.q5 .answer .tileColor-orange #darkgreen path {
+  fill: #ED7016;
+}
+
+.q5 .answer .tileColor-orange #darkorange path {
+  fill: #ED7016;
+}
+
+.q6 .answer .tileColor-red #red path {
+  fill: #F85A4E;
+}
+
+.q6 .answer .tileColor-red #yellow path {
+  fill: #F85A4E;
+}
+
+.q6 .answer .tileColor-red #blue path {
+  fill: #F85A4E;
+}
+
+.q6 .answer .tileColor-red #green path {
+  fill: #F85A4E;
+}
+
+.q6 .answer .tileColor-red #orange path {
+  fill: #F85A4E;
+}
+
+.q6 .answer .tileColor-yellow #red path {
+  fill: #F0E25E;
+}
+
+.q6 .answer .tileColor-yellow #yellow path {
+  fill: #F0E25E;
+}
+
+.q6 .answer .tileColor-yellow #blue path {
+  fill: #F0E25E;
+}
+
+.q6 .answer .tileColor-yellow #green path {
+  fill: #F0E25E;
+}
+
+.q6 .answer .tileColor-yellow #orange path {
+  fill: #F0E25E;
+}
+
+.q6 .answer .tileColor-blue #red path {
+  fill: #5B8EF0;
+}
+
+.q6 .answer .tileColor-blue #yellow path {
+  fill: #5B8EF0;
+}
+
+.q6 .answer .tileColor-blue #blue path {
+  fill: #5B8EF0;
+}
+
+.q6 .answer .tileColor-blue #green path {
+  fill: #5B8EF0;
+}
+
+.q6 .answer .tileColor-blue #orange path {
+  fill: #5B8EF0;
+}
+
+.q6 .answer .tileColor-green #red path {
+  fill: #70D374;
+}
+
+.q6 .answer .tileColor-green #yellow path {
+  fill: #70D374;
+}
+
+.q6 .answer .tileColor-green #blue path {
+  fill: #70D374;
+}
+
+.q6 .answer .tileColor-green #green path {
+  fill: #70D374;
+}
+
+.q6 .answer .tileColor-green #orange path {
+  fill: #70D374;
+}
+
+.q6 .answer .tileColor-orange #red path {
+  fill: #F58839;
+}
+
+.q6 .answer .tileColor-orange #yellow path {
+  fill: #F58839;
+}
+
+.q6 .answer .tileColor-orange #blue path {
+  fill: #F58839;
+}
+
+.q6 .answer .tileColor-orange #green path {
+  fill: #F58839;
+}
+
+.q6 .answer .tileColor-orange #orange path {
+  fill: #F58839;
+}
+
+.q7 .answer .tileColor-pink #pink path {
+  fill: #FC5994;
+}
+
+.q7 .answer .tileColor-pink #blue path {
+  fill: #FC5994;
+}
+
+.q7 .answer .tileColor-pink #purple path {
+  fill: #FC5994;
+}
+
+.q7 .answer .tileColor-pink #red path {
+  fill: #FC5994;
+}
+
+.q7 .answer .tileColor-pink #orange path {
+  fill: #FC5994;
+}
+
+.q7 .answer .tileColor-pink #green path {
+  fill: #FC5994;
+}
+
+.q7 .answer .tileColor-blue #pink path {
+  fill: #02A9F4;
+}
+
+.q7 .answer .tileColor-blue #blue path {
+  fill: #02A9F4;
+}
+
+.q7 .answer .tileColor-blue #purple path {
+  fill: #02A9F4;
+}
+
+.q7 .answer .tileColor-blue #red path {
+  fill: #02A9F4;
+}
+
+.q7 .answer .tileColor-blue #orange path {
+  fill: #02A9F4;
+}
+
+.q7 .answer .tileColor-blue #green path {
+  fill: #02A9F4;
+}
+
+.q7 .answer .tileColor-purple #pink path {
+  fill: #8762F1;
+}
+
+.q7 .answer .tileColor-purple #blue path {
+  fill: #8762F1;
+}
+
+.q7 .answer .tileColor-purple #purple path {
+  fill: #8762F1;
+}
+
+.q7 .answer .tileColor-purple #red path {
+  fill: #8762F1;
+}
+
+.q7 .answer .tileColor-purple #orange path {
+  fill: #8762F1;
+}
+
+.q7 .answer .tileColor-purple #green path {
+  fill: #8762F1;
+}
+
+.q7 .answer .tileColor-red #pink path {
+  fill: #F16262;
+}
+
+.q7 .answer .tileColor-red #blue path {
+  fill: #F16262;
+}
+
+.q7 .answer .tileColor-red #purple path {
+  fill: #F16262;
+}
+
+.q7 .answer .tileColor-red #red path {
+  fill: #F16262;
+}
+
+.q7 .answer .tileColor-red #orange path {
+  fill: #F16262;
+}
+
+.q7 .answer .tileColor-red #green path {
+  fill: #F16262;
+}
+
+.q7 .answer .tileColor-orange #pink path {
+  fill: #F58839;
+}
+
+.q7 .answer .tileColor-orange #blue path {
+  fill: #F58839;
+}
+
+.q7 .answer .tileColor-orange #purple path {
+  fill: #F58839;
+}
+
+.q7 .answer .tileColor-orange #red path {
+  fill: #F58839;
+}
+
+.q7 .answer .tileColor-orange #orange path {
+  fill: #F58839;
+}
+
+.q7 .answer .tileColor-orange #green path {
+  fill: #F58839;
+}
+
+.q7 .answer .tileColor-green #pink path {
+  fill: #8DE14B;
+}
+
+.q7 .answer .tileColor-green #blue path {
+  fill: #8DE14B;
+}
+
+.q7 .answer .tileColor-green #purple path {
+  fill: #8DE14B;
+}
+
+.q7 .answer .tileColor-green #red path {
+  fill: #8DE14B;
+}
+
+.q7 .answer .tileColor-green #orange path {
+  fill: #8DE14B;
+}
+
+.q7 .answer .tileColor-green #green path {
+  fill: #8DE14B;
+}
+
+
+.q8 .answer .tileColor-yellow #yellow path {
+  fill: #FFE600;
+}
+
+.q8 .answer .tileColor-yellow #blue path {
+  fill: #FFE600;
+}
+
+.q8 .answer .tileColor-yellow #violet path {
+  fill: #FFE600;
+}
+
+.q8 .answer .tileColor-yellow #red path {
+  fill: #FFE600;
+}
+
+.q8 .answer .tileColor-yellow #orange path {
+  fill: #FFE600;
+}
+
+.q8 .answer .tileColor-yellow #green path {
+  fill: #FFE600;
+}
+
+.q8 .answer .tileColor-blue #yellow path {
+  fill: #02A9F4;
+}
+
+.q8 .answer .tileColor-blue #blue path {
+  fill: #02A9F4;
+}
+
+.q8 .answer .tileColor-blue #violet path {
+  fill: #02A9F4;
+}
+
+.q8 .answer .tileColor-blue #red path {
+  fill: #02A9F4;
+}
+
+.q8 .answer .tileColor-blue #orange path {
+  fill: #02A9F4;
+}
+
+.q8 .answer .tileColor-blue #green path {
+  fill: #02A9F4;
+}
+
+.q8 .answer .tileColor-violet #yellow path {
+  fill: #8762F1;
+}
+
+.q8 .answer .tileColor-violet #blue path {
+  fill: #8762F1;
+}
+
+.q8 .answer .tileColor-violet #violet path {
+  fill: #8762F1;
+}
+
+.q8 .answer .tileColor-violet #red path {
+  fill: #8762F1;
+}
+
+.q8 .answer .tileColor-violet #orange path {
+  fill: #8762F1;
+}
+
+.q8 .answer .tileColor-violet #green path {
+  fill: #8762F1;
+}
+
+.q8 .answer .tileColor-red #yellow path {
+  fill: #F85A4E;
+}
+
+.q8 .answer .tileColor-red #blue path {
+  fill: #F85A4E;
+}
+
+.q8 .answer .tileColor-red #violet path {
+  fill: #F85A4E;
+}
+
+.q8 .answer .tileColor-red #red path {
+  fill: #F85A4E;
+}
+
+.q8 .answer .tileColor-red #orange path {
+  fill: #F85A4E;
+}
+
+.q8 .answer .tileColor-red #green path {
+  fill: #F85A4E;
+}
+
+.q8 .answer .tileColor-orange #yellow path {
+  fill: #FF9801;
+}
+
+.q8 .answer .tileColor-orange #blue path {
+  fill: #FF9801;
+}
+
+.q8 .answer .tileColor-orange #violet path {
+  fill: #FF9801;
+}
+
+.q8 .answer .tileColor-orange #red path {
+  fill: #FF9801;
+}
+
+.q8 .answer .tileColor-orange #orange path {
+  fill: #FF9801;
+}
+
+.q8 .answer .tileColor-orange #green path {
+  fill: #FF9801;
+}
+
+.q8 .answer .tileColor-green #yellow path {
+  fill: #32D736;
+}
+
+.q8 .answer .tileColor-green #blue path {
+  fill: #32D736;
+}
+
+.q8 .answer .tileColor-green #violet path {
+  fill: #32D736;
+}
+
+.q8 .answer .tileColor-green #red path {
+  fill: #32D736;
+}
+
+.q8 .answer .tileColor-green #orange path {
+  fill: #32D736;
+}
+
+.q8 .answer .tileColor-green #green path {
+  fill: #32D736;
+}
+
+.q9 .answer .tileColor-brown #brown path {
+  fill: #CF9550;
+}
+
+.q9 .answer .tileColor-brown #yellow path {
+  fill: #CF9550;
+}
+
+.q9 .answer .tileColor-brown #blue path {
+  fill: #CF9550;
+}
+
+.q9 .answer .tileColor-brown #purple path {
+  fill: #CF9550;
+}
+
+.q9 .answer .tileColor-brown #pink path {
+  fill: #CF9550;
+}
+
+.q9 .answer .tileColor-brown #orange path {
+  fill: #CF9550;
+}
+
+.q9 .answer .tileColor-brown #red path {
+  fill: #CF9550;
+}
+
+.q9 .answer .tileColor-yellow #brown path {
+  fill: #FFE600;
+}
+
+.q9 .answer .tileColor-yellow #yellow path {
+  fill: #FFE600;
+}
+
+.q9 .answer .tileColor-yellow #blue path {
+  fill: #FFE600;
+}
+
+.q9 .answer .tileColor-yellow #purple path {
+  fill: #FFE600;
+}
+
+.q9 .answer .tileColor-yellow #pink path {
+  fill: #FFE600;
+}
+
+.q9 .answer .tileColor-yellow #orange path {
+  fill: #FFE600;
+}
+
+.q9 .answer .tileColor-yellow #red path {
+  fill: #FFE600;
+}
+
+.q9 .answer .tileColor-blue #brown path {
+  fill: #6AE2DB;
+}
+
+.q9 .answer .tileColor-blue #yellow path {
+  fill: #6AE2DB;
+}
+
+.q9 .answer .tileColor-blue #blue path {
+  fill: #6AE2DB;
+}
+
+.q9 .answer .tileColor-blue #purple path {
+  fill: #6AE2DB;
+}
+
+.q9 .answer .tileColor-blue #pink path {
+  fill: #6AE2DB;
+}
+
+.q9 .answer .tileColor-blue #orange path {
+  fill: #6AE2DB;
+}
+
+.q9 .answer .tileColor-blue #red path {
+  fill: #6AE2DB;
+}
+
+.q9 .answer .tileColor-purple #brown path {
+  fill: #B696DE;
+}
+
+.q9 .answer .tileColor-purple #yellow path {
+  fill: #B696DE;
+}
+
+.q9 .answer .tileColor-purple #blue path {
+  fill: #B696DE;
+}
+
+.q9 .answer .tileColor-purple #purple path {
+  fill: #B696DE;
+}
+
+.q9 .answer .tileColor-purple #pink path {
+  fill: #B696DE;
+}
+
+.q9 .answer .tileColor-purple #orange path {
+  fill: #B696DE;
+}
+
+.q9 .answer .tileColor-pink #brown path {
+  fill: #E59CC6;
+}
+
+.q9 .answer .tileColor-pink #yellow path {
+  fill: #E59CC6;
+}
+
+.q9 .answer .tileColor-pink #blue path {
+  fill: #E59CC6;
+}
+
+.q9 .answer .tileColor-pink #purple path {
+  fill: #E59CC6;
+}
+
+.q9 .answer .tileColor-pink #pink path {
+  fill: #E59CC6;
+}
+
+.q9 .answer .tileColor-pink #orange path {
+  fill: #E59CC6;
+}
+
+.q9 .answer .tileColor-pink #red path {
+  fill: #E59CC6;
+}
+
+.q9 .answer .tileColor-orange #brown path {
+  fill: #FF9801;
+}
+
+.q9 .answer .tileColor-orange #yellow path {
+  fill: #FF9801;
+}
+
+.q9 .answer .tileColor-orange #blue path {
+  fill: #FF9801;
+}
+
+.q9 .answer .tileColor-orange #purple path {
+  fill: #FF9801;
+}
+
+.q9 .answer .tileColor-orange #pink path {
+  fill: #FF9801;
+}
+
+.q9 .answer .tileColor-orange #orange path {
+  fill: #FF9801;
+}
+
+.q9 .answer .tileColor-orange #red path {
+  fill: #FF9801;
+}
+
+.q9 .answer .tileColor-red #brown path {
+  fill: #E43C3C;
+}
+
+.q9 .answer .tileColor-red #yellow path {
+  fill: #E43C3C;
+}
+
+.q9 .answer .tileColor-red #blue path {
+  fill: #E43C3C;
+}
+
+.q9 .answer .tileColor-red #purple path {
+  fill: #E43C3C;
+}
+
+.q9 .answer .tileColor-red #pink path {
+  fill: #E43C3C;
+}
+
+.q9 .answer .tileColor-red #orange path {
+  fill: #E43C3C;
+}
+
+.q9 .answer .tileColor-red #red path {
+  fill: #E43C3C;
+}
+
+.q10 .answer .tileColor-green #green path {
+  fill: #90E199;
+}
+
+.q10 .answer .tileColor-green #yellow path {
+  fill: #90E199;
+}
+
+.q10 .answer .tileColor-green #blue path {
+  fill: #90E199;
+}
+
+.q10 .answer .tileColor-green #purple path {
+  fill: #90E199;
+}
+
+.q10 .answer .tileColor-green #pink path {
+  fill: #90E199;
+}
+
+.q10 .answer .tileColor-green #orange path {
+  fill: #90E199;
+}
+
+.q10 .answer .tileColor-green #red path {
+  fill: #90E199;
+}
+
+.q10 .answer .tileColor-yellow #green path {
+  fill: #FFF500;
+}
+
+.q10 .answer .tileColor-yellow #yellow path {
+  fill: #FFF500;
+}
+
+.q10 .answer .tileColor-yellow #blue path {
+  fill: #FFF500;
+}
+
+.q10 .answer .tileColor-yellow #purple path {
+  fill: #FFF500;
+}
+
+.q10 .answer .tileColor-yellow #pink path {
+  fill: #FFF500;
+}
+
+.q10 .answer .tileColor-yellow #orange path {
+  fill: #FFF500;
+}
+
+.q10 .answer .tileColor-yellow #red path {
+  fill: #FFE600;
+}
+
+.q10 .answer .tileColor-blue #green path {
+  fill: #6AE2DB;
+}
+
+.q10 .answer .tileColor-blue #yellow path {
+  fill: #6AE2DB;
+}
+
+.q10 .answer .tileColor-blue #blue path {
+  fill: #6AE2DB;
+}
+
+.q10 .answer .tileColor-blue #purple path {
+  fill: #6AE2DB;
+}
+
+.q10 .answer .tileColor-blue #pink path {
+  fill: #6AE2DB;
+}
+
+.q10 .answer .tileColor-blue #orange path {
+  fill: #6AE2DB;
+}
+
+.q10 .answer .tileColor-blue #red path {
+  fill: #6AE2DB;
+}
+
+.q10 .answer .tileColor-purple #green path {
+  fill: #B696DE;
+}
+
+.q10 .answer .tileColor-purple #yellow path {
+  fill: #B696DE;
+}
+
+.q10 .answer .tileColor-purple #blue path {
+  fill: #B696DE;
+}
+
+.q10 .answer .tileColor-purple #purple path {
+  fill: #B696DE;
+}
+
+.q10 .answer .tileColor-purple #pink path {
+  fill: #B696DE;
+}
+
+.q10 .answer .tileColor-purple #orange path {
+  fill: #B696DE;
+}
+
+.q10 .answer .tileColor-pink #green path {
+  fill: #E59CC6;
+}
+
+.q10 .answer .tileColor-pink #yellow path {
+  fill: #E59CC6;
+}
+
+.q10 .answer .tileColor-pink #blue path {
+  fill: #E59CC6;
+}
+
+.q10 .answer .tileColor-pink #purple path {
+  fill: #E59CC6;
+}
+
+.q10 .answer .tileColor-pink #pink path {
+  fill: #E59CC6;
+}
+
+.q10 .answer .tileColor-pink #orange path {
+  fill: #E59CC6;
+}
+
+.q10 .answer .tileColor-pink #red path {
+  fill: #E59CC6;
+}
+
+.q10 .answer .tileColor-orange #green path {
+  fill: #FF9801;
+}
+
+.q10 .answer .tileColor-orange #yellow path {
+  fill: #FF9801;
+}
+
+.q10 .answer .tileColor-orange #blue path {
+  fill: #FF9801;
+}
+
+.q10 .answer .tileColor-orange #purple path {
+  fill: #FF9801;
+}
+
+.q10 .answer .tileColor-orange #pink path {
+  fill: #FF9801;
+}
+
+.q10 .answer .tileColor-orange #orange path {
+  fill: #FF9801;
+}
+
+.q10 .answer .tileColor-orange #red path {
+  fill: #FF9801;
+}
+
+.q10 .answer .tileColor-red #green path {
+  fill: #E43C3C;
+}
+
+.q10 .answer .tileColor-red #yellow path {
+  fill: #E43C3C;
+}
+
+.q10 .answer .tileColor-red #blue path {
+  fill: #E43C3C;
+}
+
+.q10 .answer .tileColor-red #purple path {
+  fill: #E43C3C;
+}
+
+.q10 .answer .tileColor-red #pink path {
+  fill: #E43C3C;
+}
+
+.q10 .answer .tileColor-red #orange path {
+  fill: #E43C3C;
+}
+
+.q10 .answer .tileColor-red #red path {
+  fill: #E43C3C;
+}
+
+.custom-overlay .ui-dialog-content {
+  background-color:rgba(0, 0, 0, 0.5) !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;           /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center;     /* Add this line */
+}
+
+.result-image {
+  /* width: 100px; */
+  height: 100px;
+}
+.popup {
+  display: none;
+  /* initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgb(0, 0, 0, 0.55);
+}
+
+.popup img {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup_btn_border {
+  border-radius: 15px;
+  border: 4px dashed #62F163;
+  padding: 4px;
+  width: 140px;
+  height: 45px;
+}
+#custom-alert{
+  display: flex;
+  justify-self: center;
+  position: fixed;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+}
+.mobile p{
+  display: none;
+}
+.mobile img{
+  display: none;
+}
+
+
+/*** 
+====================================================================
+    Page Styling - END
+====================================================================
+***/
+
+/*** 
+====================================================================
+   Responsive - START
+====================================================================
+***/
+
+/* large laptop screen*/
+@media (max-width: 1440px) {}
+
+/* small laptop screen*/
+@media only screen and (max-width: 1024px) and (orientation: portrait)  {
+  .pageGrid {
+    height: auto;
+    min-height: auto;
+    display: block;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  svg {
+    transform: scale(0.80);
+  }
+}
+
+/* tablet screen*/
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .pageGrid {
+    height: auto;
+    display: block;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  svg {
+    transform: scale(0.90);
+  }
+  #m1 .n0-i2 .n1-i1 {
+    width: 100px;
+  }
+  
+  #m1 .n0-i2 .n1-i2 {
+    width: 100px;
+  }
+  
+  #m1 .n0-i2 .n1-i3 {
+    width: 100px;
+  }
+  
+  #m1 .n0-i2 .n1-i4 {
+    width: 100px;
+  }
+  
+  #m1 .n0-i2 .n1-i5 {
+    width: 100px;
+  }
+  
+  #m1 .n0-i2 .n1-i6 {
+    width: 100px;
+  }
+  
+  #m1 .n0-i2 .n1-i7 {
+    width: 100px;
+  }
+  #m1 .n0-i2 {
+    height: 180px;
+  }
+  .n0-i1 {
+    --md: 3%;
+    --xs:1%;
+  }
+  .q4 .inner {
+    transform: scale(0.85);
+  }
+  .q4 .n0-i1 {
+    margin: -5%;
+  }
+  .q5 .inner {
+    transform: scale(0.85);
+  }
+  .q5 .n0-i1 {
+    margin: -5%;
+  }
+  .q6 .inner {
+    transform: scale(0.85);
+  }
+  .q6 .n0-i1 {
+    margin: -5%;
+  }
+  .q7 .inner {
+    transform: scale(0.85);
+  }
+  .q7 .n0-i1 {
+    margin: -6%;
+  }
+  .q8 .n0-i1 {
+    margin: -2%;
+  }
+  .q9 .inner {
+    transform: scale(0.85);
+  }
+  .q9 .n0-i1 {
+    margin: -5%;
+  }
+  .q10 .inner {
+    transform: scale(0.80);
+  }
+  .q10 .n0-i1 {
+    margin: -7%;
+  }  
+  #custom-alert img{
+   width: 300px;
+  }
+  
+}
+
+/* Landscape orientation for mobile */
+@media only screen and (max-width: 950px) and (orientation: landscape) {
+  .pageGrid {
+    display: block;
+  }
+  #h1 p {
+    padding: 2px 10px;
+    font-size: 1.8rem;
+  }
+  #h1 button {
+    font-size: 1.8rem;
+    padding: 2px 10px;
+  }
+  #h1 .n0-i2 .n1-i2 {
+    border: 4px dashed #62F163;
+    height: fit-content;
+    padding: 4px;
+    border-radius: 15px;
+  }
+  #h1 .boxborder {
+    padding: 8px 10px;
+}
+  #h1 .boxborder img {
+    width: 85%;
+  }
+  #h1 .load img {
+    width: 45px;
+  }
+  #h1 .n0-i1 {
+    --sm:4%;
+  }
+  #h1 .n0-i2 {
+    --px-xs:2%;
+  }
+  #m1 .n0-i2 {
+    height: 110px;
+    --sm:5%;
+  }
+  #m1 .n0-i2 .inner {
+    max-width: 10vw;
+  }
+
+   #m1 svg{
+  width: 13vw;
+  height: 100%;
+  } 
+  .n0-i1 {
+    --md:1%;
+  }
+  #m1 .q4 svg{
+    width: 11vw;
+    height: 100%;
+    }
+  .q4 .n0-i1 {
+    --xs:1.5%;
+  }
+  .q4 .n0-i1 {
+    margin: -3%;
+}
+  #m1 .q5 svg{
+    width: 12vw;
+    height: 100%;
+    } 
+  .q5 .n0-i1 {
+    --xs:1.5%;
+  }
+  .q6 .n0-i1 {
+    --xs:2.5%;
+  }
+.q7 .n0-i1 {
+    --xs:1.5%;
+}
+#m1 .q8 svg{
+  width: 12vw;
+  height: 100%;
+}
+#m1 .q9 svg{
+    width: 12vw;
+    height: 100%;
+} 
+  .q9 .n0-i1 {
+    --xs:1.5%;
+}
+
+#m1 .q9 .n0-i2 {
+  height: 110px;
+  --sm:2%;
+}
+
+#m1 .q10 svg{
+  width: 13vw;
+  height: 100%;
+} 
+.q10 .n0-i1 {
+  --xs:5%;
+}
+
+#m1 .q10 .n0-i2 {
+  height: 110px;
+  --sm:2%;
+}
+
+#custom-alert img{
+  width: 150px;
+}
+#custom-alert {
+  top: 10%;
+  position: fixed;
+} 
+
+}
+
+/* tablet screen*/
+@media only screen and (max-width: 768px) and (orientation: portrait){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pageGrid {
+    display: none;
+  }
+  .mobile p{
+    display: flex;
+    font-size: 3rem;
+  }
+  .mobile img {
+    width: 8%;
+    display: flex;
+    position: fixed; 
+    left: 45%;
+    justify-self: center;
+  }
+}
+
+/* mobile screen*/
+@media (max-width: 577px) and (orientation: portrait){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .pageGrid {
+    display: none;
+  }
+  .mobile p{
+    display: flex;
+    font-size: 2rem;
+  }
+  .mobile img {
+    width: 8%;
+    display: flex;
+    position: fixed; 
+  }
+   
+  
+}
+
+/*** 
+====================================================================
+   Responsive - END
+====================================================================
+***/

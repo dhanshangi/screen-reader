@@ -1,0 +1,353 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/hash.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Color filling activity</title>
+</head>
+
+<body class="inner-flex center-x-flex center-y-flex">
+    <div id="page" class="pageGrid">
+        <div class="popup" id="popup"></div>
+        <header  class="head" tabindex="0">
+            <section id="h1">
+                <div class="simpleGrid p-sm-single" style="--grid:2;">
+                    <div class="inner-flex n0-i1 gp-sm">
+                        <div class="inner n1-i1 center-y-single boxborder none navigate" tabindex="0" aria-label="exit">
+                            <a href="#">
+                                <img src="img/exit1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="inner n1-i2" tabindex="0">
+                            <p class="navigate" tabindex="0">1 / 10</p>
+                        </div>
+                    </div>
+                    <div class="inner-flex n0-i2 gp-sm end-x-flex mt-xs-single">
+                    <a href="g1-1.html" class="none navigate" tabindex="0" aria-label="reload">
+                        <div class="inner n1-i1 load">
+                            <img src="img/reload.svg" alt="">
+                        </div>
+                    </a>
+                        <div class="inner n1-i2">
+                            <button id="submit" class="inner-flex navigate" type="submit" tabindex="0" aria-live="polite" aria-atomic="true">
+                                <img src="img/7-Check.svg" alt="">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section id="m1" class="worksheet w1">
+                <div class="simpleGrid question q1 active" data-question="tiles">
+                    <div class="inner-flex n0-i1 answer center-x-flex p-md-single gp-md" tabindex="0">
+                        <div class="red inner n1-i1 ans-tiles" data-tiles="red" aria-label="red" tabindex="0">
+                            <svg width="200" height="200" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title id="titlered">Red</title>
+                             <g id=red>
+                                <path d="M222 78C222 126 174 174 150 174C126 174 78 126 78 78C78 38.2441 110.244 6 150 6C189.756 6 222 38.2441 222 78Z" fill="#EAFFEA"/>
+                             </g>
+                                <path d="M156 30C156 33.3117 153.312 36 150 36C126.84 36 108 54.8402 108 78C108 81.3117 105.312 84 102 84C98.6883 84 96 81.3117 96 78C96 48.2279 120.228 24 150 24C153.312 24 156 26.6883 156 30ZM150 168C129.252 168 84 122.82 84 78C84 41.6162 113.616 12 150 12C186.384 12 216 41.6162 216 78C216 122.82 170.748 168 150 168ZM228 78C228 34.9922 193.008 0 150 0C106.992 0 72 34.9922 72 78C72 121.98 109.812 166.548 138.072 177.444L133.752 181.752C132.048 183.468 131.532 186.06 132.456 188.292C133.38 190.536 135.576 192 138 192H146.004C163.932 234.744 154.476 244.596 141.384 257.952C133.368 266.148 124.272 275.436 120.168 292.608C119.388 295.824 121.379 299.064 124.608 299.832C125.076 299.952 125.544 300 126 300C128.724 300 131.184 298.152 131.832 295.392C135.18 281.46 142.692 273.768 149.964 266.34C166.344 249.612 175.968 234.996 158.988 192H161.999C164.423 192 166.62 190.536 167.544 188.292C168.468 186.06 167.951 183.468 166.247 181.752L161.927 177.444C190.188 166.548 228 121.98 228 78Z" fill="#F85A4E"/>
+                                <path opacity="0.24" d="M226.836 65.0278C226.356 62.1356 223.847 60.0239 220.92 60.0239C217.655 60.444 215.46 62.172 214.992 65.0882C208.284 107.472 167.292 144 150 144C132.696 144 91.7039 107.472 85.0078 65.0882C84.5397 62.1843 82.0559 60.0362 79.0916 60.0239H79.0799C76.1396 60.0239 73.6318 62.1356 73.152 65.0278C72.3721 69.6837 72 73.92 72 77.9999C72 128.592 122.04 180 150 180C177.96 180 228 128.592 228 77.9999C228 73.92 227.616 69.6837 226.836 65.0278Z" fill="#F85A4E" fill-opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <div class="yellow inner n1-i2 ans-tiles" data-tiles="yellow" tabindex="0" aria-label="yellow">
+                            <svg width="200" height="200" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title id="titleyellow">yellow</title>
+                                <g id="yellow">
+                                <path d="M222 78C222 126 174 174 150 174C126 174 78 126 78 78C78 38.2441 110.244 6 150 6C189.756 6 222 38.2441 222 78Z" fill="#EAFFEA"/>
+                               </g>
+                                <path d="M156 30C156 33.3117 153.312 36 150 36C126.84 36 108 54.8402 108 78C108 81.3117 105.312 84 102 84C98.6883 84 96 81.3117 96 78C96 48.2279 120.228 24 150 24C153.312 24 156 26.6883 156 30ZM150 168C129.252 168 84 122.82 84 78C84 41.6162 113.616 12 150 12C186.384 12 216 41.6162 216 78C216 122.82 170.748 168 150 168ZM228 78C228 34.9922 193.008 0 150 0C106.992 0 72 34.9922 72 78C72 121.98 109.812 166.548 138.072 177.444L133.752 181.752C132.048 183.468 131.532 186.06 132.456 188.292C133.38 190.536 135.576 192 138 192H146.004C163.932 234.744 154.476 244.596 141.384 257.952C133.368 266.148 124.272 275.436 120.168 292.608C119.388 295.824 121.379 299.064 124.608 299.832C125.076 299.952 125.544 300 126 300C128.724 300 131.184 298.152 131.832 295.392C135.18 281.46 142.692 273.768 149.964 266.34C166.344 249.612 175.968 234.996 158.988 192H161.999C164.423 192 166.62 190.536 167.544 188.292C168.468 186.06 167.951 183.468 166.247 181.752L161.927 177.444C190.188 166.548 228 121.98 228 78Z" fill="#F0E25E"/>
+                                <path opacity="0.24" d="M226.836 65.0278C226.356 62.1356 223.847 60.0239 220.92 60.0239C217.655 60.444 215.46 62.172 214.992 65.0882C208.284 107.472 167.292 144 150 144C132.696 144 91.7039 107.472 85.0078 65.0882C84.5397 62.1843 82.0559 60.0362 79.0916 60.0239H79.0799C76.1396 60.0239 73.6318 62.1356 73.152 65.0278C72.3721 69.6837 72 73.92 72 77.9999C72 128.592 122.04 180 150 180C177.96 180 228 128.592 228 77.9999C228 73.92 227.616 69.6837 226.836 65.0278Z" fill="#F0E25E"/>
+                            </svg>
+                        </div>
+                        <div class="blue inner n1-i3 ans-tiles" data-tiles="blue" tabindex="0" aria-label="skyblue">
+                            <svg width="200" height="200" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title id="titleskyblue">skyblue</title>
+                                <g id="blue">
+                                <path d="M222 78C222 126 174 174 150 174C126 174 78 126 78 78C78 38.2441 110.244 6 150 6C189.756 6 222 38.2441 222 78Z" fill="#EAFFEA"/>
+                               </g>
+                                <path d="M156 30C156 33.3117 153.312 36 150 36C126.84 36 108 54.8402 108 78C108 81.3117 105.312 84 102 84C98.6883 84 96 81.3117 96 78C96 48.2279 120.228 24 150 24C153.312 24 156 26.6883 156 30ZM150 168C129.252 168 84 122.82 84 78C84 41.6162 113.616 12 150 12C186.384 12 216 41.6162 216 78C216 122.82 170.748 168 150 168ZM228 78C228 34.9922 193.008 0 150 0C106.992 0 72 34.9922 72 78C72 121.98 109.812 166.548 138.072 177.444L133.752 181.752C132.048 183.468 131.532 186.06 132.456 188.292C133.38 190.536 135.576 192 138 192H146.004C163.932 234.744 154.476 244.596 141.384 257.952C133.368 266.148 124.272 275.436 120.168 292.608C119.388 295.824 121.379 299.064 124.608 299.832C125.076 299.952 125.544 300 126 300C128.724 300 131.184 298.152 131.832 295.392C135.18 281.46 142.692 273.768 149.964 266.34C166.344 249.612 175.968 234.996 158.988 192H161.999C164.423 192 166.62 190.536 167.544 188.292C168.468 186.06 167.951 183.468 166.247 181.752L161.927 177.444C190.188 166.548 228 121.98 228 78Z" fill="#5BCCF0"/>
+                                <path opacity="0.24" d="M226.836 65.0278C226.356 62.1356 223.847 60.0239 220.92 60.0239C217.655 60.444 215.46 62.172 214.992 65.0882C208.284 107.472 167.292 144 150 144C132.696 144 91.7039 107.472 85.0078 65.0882C84.5397 62.1843 82.0559 60.0362 79.0916 60.0239H79.0799C76.1396 60.0239 73.6318 62.1356 73.152 65.0278C72.3721 69.6837 72 73.92 72 77.9999C72 128.592 122.04 180 150 180C177.96 180 228 128.592 228 77.9999C228 73.92 227.616 69.6837 226.836 65.0278Z" fill="#5BCCF0"/>
+                            </svg>
+                        </div>
+                        <div class="green inner n1-i4 ans-tiles" data-tiles="green" tabindex="0" aria-label="green">
+                            <svg width="200" height="200" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title id="titlegreen">green</title>
+                                <g id="green">
+                                <path d="M222 78C222 126 174 174 150 174C126 174 78 126 78 78C78 38.2441 110.244 6 150 6C189.756 6 222 38.2441 222 78Z" fill="#EAFFEA"/>
+                             </g>
+                                <path d="M156 30C156 33.3117 153.312 36 150 36C126.84 36 108 54.8402 108 78C108 81.3117 105.312 84 102 84C98.6883 84 96 81.3117 96 78C96 48.2279 120.228 24 150 24C153.312 24 156 26.6883 156 30ZM150 168C129.252 168 84 122.82 84 78C84 41.6162 113.616 12 150 12C186.384 12 216 41.6162 216 78C216 122.82 170.748 168 150 168ZM228 78C228 34.9922 193.008 0 150 0C106.992 0 72 34.9922 72 78C72 121.98 109.812 166.548 138.072 177.444L133.752 181.752C132.048 183.468 131.532 186.06 132.456 188.292C133.38 190.536 135.576 192 138 192H146.004C163.932 234.744 154.476 244.596 141.384 257.952C133.368 266.148 124.272 275.436 120.168 292.608C119.388 295.824 121.379 299.064 124.608 299.832C125.076 299.952 125.544 300 126 300C128.724 300 131.184 298.152 131.832 295.392C135.18 281.46 142.692 273.768 149.964 266.34C166.344 249.612 175.968 234.996 158.988 192H161.999C164.423 192 166.62 190.536 167.544 188.292C168.468 186.06 167.951 183.468 166.247 181.752L161.927 177.444C190.188 166.548 228 121.98 228 78Z" fill="#70D374"/>
+                                <path opacity="0.24" d="M226.836 65.0278C226.356 62.1356 223.847 60.0239 220.92 60.0239C217.655 60.444 215.46 62.172 214.992 65.0882C208.284 107.472 167.292 144 150 144C132.696 144 91.7039 107.472 85.0078 65.0882C84.5397 62.1843 82.0559 60.0362 79.0916 60.0239H79.0799C76.1396 60.0239 73.6318 62.1356 73.152 65.0278C72.3721 69.6837 72 73.92 72 77.9999C72 128.592 122.04 180 150 180C177.96 180 228 128.592 228 77.9999C228 73.92 227.616 69.6837 226.836 65.0278Z" fill="#70D374"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="inner-flex n0-i2 reference center-x-flex center-y-flex p-sm-single gp-sm" tabindex="0">
+                        <div class="inner n1-i1 ans-ref tile-1 tileColor-red boxsize" data-tiles="red" tabindex="0" aria-label="red box">
+                            <img src="img/boxredstar.svg" alt="red box">
+                        </div>
+                        <div class="inner n1-i2 ans-ref tile-2 tileColor-yellow boxsize" data-tiles="yellow" tabindex="0" aria-label="yellow box">
+                            <img src="img/boxyellowstar.svg" alt="yellow box">
+                        </div>
+                        <div class="inner n1-i3 ans-ref tile-3 tileColor-blue boxsize" data-tiles="blue" tabindex="0" aria-label="skyblue box">
+                            <img src="img/boxfloblue.svg" alt="skyblue box">
+                        </div>
+                        <div class="inner n1-i4 ans-ref tile-4 tileColor-green boxsize" data-tiles="green" tabindex="0" aria-label="green box">
+                            <img src="img/boxgreenstar.svg" alt="green box">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="screen-reader-announcement" aria-live="polite" aria-atomic="true" style="position: absolute; left: -9999px;"></div>
+
+            </section>
+
+            <div id="custom-alert" style="display: none;">
+                <div class="alert-message">
+                    <a href="">
+                        <img src="img/congrats.png" alt="">
+                    </a>
+                </div>
+            </div>
+            
+            <div id="congrats-popup" title="Congratulations!" style="display: none;">
+                <p>You answered correctly!</p>
+            </div>
+
+        </main>
+    </div>
+    
+    <div class="inner  mobile">
+        <p>Please rotate your phone.</p>
+        <img src="img/rotate.svg" alt="">
+    </div>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/hash.js"></script> 
+<script src="js/script.js"></script>
+
+
+<script>
+ 
+
+ // Function to read out the content using Web Speech API
+function readText(message) {
+    var speech = new SpeechSynthesisUtterance(message);
+    speech.lang = 'en-US';  // You can change this to 'ta-IN' for Tamil
+    window.speechSynthesis.speak(speech);
+}
+
+// Function to read the aria-label, button text, link text, alt text, paragraph text, or title
+function screenReader(element) {
+    let textToRead = '';
+
+    // Check if the element has an aria-label
+    if (element.hasAttribute('aria-label')) {
+        textToRead = element.getAttribute('aria-label');
+    } 
+    // Read alt text for images
+    else if (element.tagName === 'IMG' && element.hasAttribute('alt')) {
+        textToRead = element.getAttribute('alt');
+    }
+    // Read button text if aria-label is missing
+    else if (element.tagName === 'BUTTON') {
+        textToRead = element.textContent.trim();
+    }
+    // Read link text if aria-label is missing
+    else if (element.tagName === 'A') {
+        textToRead = element.textContent.trim();
+    }
+    // Read paragraph text
+    else if (element.tagName === 'P') {
+        textToRead = element.textContent.trim();
+    }
+
+    if (textToRead) {
+        readText(textToRead);
+    }
+}
+    
+ // Function to read the title tag on page load
+        function readTitle() {
+            const title = document.title;
+            if (title) {
+                readText(`${title}`);
+            }
+        }
+
+        // Call the title reading function as soon as the page fully loads
+        window.onload = function() {
+            readTitle();
+        };
+
+
+// Add event listeners for focus and click to target all focusable elements
+function initializeScreenReader() {
+    const elements = document.querySelectorAll('[tabindex], [aria-label], img[alt], p');
+
+    elements.forEach(element => {
+        element.addEventListener('focus', () => screenReader(element));
+    });
+
+    initializeTilesAnnouncement();
+}
+
+// Function to update screen reader announcement for tiles
+function updateAnnouncement(text) {
+    const screenReaderAnnouncement = document.getElementById('screen-reader-announcement');
+    if (screenReaderAnnouncement) {
+        screenReaderAnnouncement.textContent = text;
+    }
+    readText(text);  // Announce using screen reader
+}
+
+// Function to announce both colors when tileColor- class is added to ans-tiles
+function announceBothColors(tile) {
+    const ansColor = tile.getAttribute('data-tiles');
+    const tileColorClass = Array.from(tile.classList).find(className => className.startsWith('tileColor-'));
+    const tileColor = tileColorClass ? tileColorClass.replace('tileColor-', '') : 'unknown';
+
+    const announcement = `Selected ${ansColor} with ${tileColor} Box`;
+    updateAnnouncement(announcement);
+}
+
+// Tiles announcement functionality
+function initializeTilesAnnouncement() {
+    // Handle clicks and keydown for ans-tiles
+    document.querySelectorAll('.ans-tiles').forEach(tile => {
+        tile.addEventListener('keydown', function (event) {
+            if (event.key === ' ') {
+                event.preventDefault();
+                this.click();
+            }
+        });
+
+        tile.setAttribute('tabindex', '0');
+    });
+
+    // Handle clicks and keydown for tileColor- elements
+    document.querySelectorAll('[class*="tileColor-"]').forEach(tileColor => {
+        tileColor.addEventListener('click', function () {
+            const match = this.className.match(/tileColor-(\w+)/);
+            const color = match ? match[1] : 'unknown';
+            const announcement = `Selected ${color} Box`;
+            updateAnnouncement(announcement);
+
+            const parentTile = this.closest('.ans-tiles');
+            if (parentTile) {
+                announceBothColors(parentTile);
+            }
+        });
+
+        tileColor.addEventListener('keydown', function (event) {
+            if (event.key === ' ') {
+                event.preventDefault();
+                this.click();
+            }
+        });
+
+        tileColor.setAttribute('tabindex', '0');
+    });
+
+    // MutationObserver to watch for class changes and handle tile announcements
+    const observer = new MutationObserver(mutations => {
+        let announcedTiles = new Set(); // Track announced tiles
+
+        mutations.forEach(mutation => {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                const target = mutation.target;
+                if ((target.classList.contains('ans-tiles') || target.className.includes('tileColor-')) 
+                    && !announcedTiles.has(target)) {
+                    announceBothColors(target);
+                    announcedTiles.add(target); // Mark the tile as announced to avoid repeated announcements
+                }
+            }
+        });
+    });
+
+    // Start observing ans-tiles elements
+    document.querySelectorAll('.ans-tiles').forEach(tile => {
+        observer.observe(tile, { attributes: true });
+    });
+}
+
+// Arrow key navigation for tiles
+document.addEventListener('keydown', function(event) {
+    const parents = Array.from(document.querySelectorAll('.head, #m1 .active .n0-i1, #m1 .active .n0-i2'));
+    const activeElement = document.activeElement;
+
+    function focusParent(index) {
+        if (parents[index]) {
+            parents[index].focus();
+            console.log("Focusing Parent:", parents[index]);
+        }
+    }
+
+    function focusChild(parent, index) {
+        const childElements = Array.from(parent.querySelectorAll('.navigate, .ans-tiles, [class*="tileColor-"]'))
+            .filter(el => el.offsetParent !== null); // Filter out hidden elements
+        if (childElements[index]) {
+            childElements[index].focus();
+            console.log("Focusing Child:", childElements[index]);
+        }
+    }
+
+    if (event.key === "ArrowDown") {
+        if (activeElement.classList.contains('head')) {
+            const firstN0i1 = document.querySelector('#m1 .active .n0-i1');
+            if (firstN0i1) {
+                firstN0i1.focus();
+                event.preventDefault();
+                return;
+            }
+        } else {
+            const currentParentIndex = parents.findIndex(parent => parent === activeElement || parent.contains(activeElement));
+            focusParent((currentParentIndex + 1) % parents.length);
+            event.preventDefault();
+        }
+
+    } else if (event.key === "ArrowUp") {
+        const currentParentIndex = parents.findIndex(parent => parent === activeElement || parent.contains(activeElement));
+        focusParent((currentParentIndex - 1 + parents.length) % parents.length);
+        event.preventDefault();
+    } else if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+        const currentParentIndex = parents.findIndex(parent => parent === activeElement || parent.contains(activeElement));
+        if (currentParentIndex !== -1) {
+            const focusedParent = parents[currentParentIndex];
+            const childElements = Array.from(focusedParent.querySelectorAll('.navigate, .ans-tiles, [class*="tileColor-"]'))
+                .filter(el => el.offsetParent !== null);
+            let currentChildIndex = childElements.indexOf(activeElement);
+
+            if (event.key === "ArrowRight") {
+                currentChildIndex = (currentChildIndex + 1) % childElements.length;
+            } else if (event.key === "ArrowLeft") {
+                currentChildIndex = (currentChildIndex - 1 + childElements.length) % childElements.length;
+            }
+
+            focusChild(focusedParent, currentChildIndex);
+            event.preventDefault();
+        }
+    }
+});
+
+// Ensure all focusable elements have tabindex
+document.querySelectorAll('.ans-tiles, [class*="tileColor-"], .head, #m1 .n0-i1, #m1 .n0-i2').forEach(el => {
+    el.setAttribute('tabindex', '0');
+});
+
+// Call the initialization function
+    window.onload = function() {
+    readTitle();
+    initializeScreenReader();
+};
+
+
+
+</script>
+
+</body>
+</html>
